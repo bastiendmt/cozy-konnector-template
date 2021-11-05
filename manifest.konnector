@@ -1,15 +1,15 @@
 {
   "version": "1.0.0",
-  "name": "Template",
+  "name": "Amazon",
   "type": "konnector",
   "language": "node",
   "clientSide": true,
   "icon": "icon.svg",
-  "slug": "template",
+  "slug": "amazon",
   "id": "template",
   "source": "git@github.com:konnectors/cozy-konnector-template.git",
   "editor": "Cozy",
-  "vendor_link": "http://books.toscrape.com/",
+  "vendor_link": "https://www.amazon.fr/gp/css/order-history?ref_=nav_AccountFlyout_orders",
   "categories": [
     "transport"
   ],
