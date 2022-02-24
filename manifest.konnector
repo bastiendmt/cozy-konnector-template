@@ -1,20 +1,50 @@
 {
+  "version": "1.0.0",
   "name": "Books konnector",
-  "type": "node",
-  "slug": "bookskonnector",
-  "description": "description",
-  "source": "git://https://github.com/bastiendmt/cozy-konnector-template",
-  "permissions": {
-    "accounts": {
-      "description": "Required to get the account's data",
-      "type": "io.cozy.accounts",
-      "verbs": ["GET"]
+  "type": "konnector",
+  "language": "node",
+  "icon": "icon.png",
+  "slug": "template",
+  "source": "git@github.com:konnectors/template.git",
+  "editor": "Cozy",
+  "vendor_link": "Link to the target website",
+  "categories": ["others"],
+  "fields": {
+    "login": {
+      "type": "text"
     },
-    "books": {
-      "type" : "io.cozy.books"
+    "password": {
+      "type": "password"
     }
   },
-   "locales": {
+  "folders": [{"defaultDir": "$administrative/$konnector/$account"}],
+  "data_types": [
+    "bill"
+  ],
+  "screenshots": [],
+  "permissions": {
+    "bank operations": {
+      "type": "io.cozy.bank.operations"
+    },
+    "bills": {
+      "type": "io.cozy.bills"
+    },
+    "files": {
+      "type": "io.cozy.files"
+    },
+    "accounts": {
+      "type": "io.cozy.accounts"
+    },
+    "books": {
+      "type": "io.cozy.books"
+    }
+  },
+  "developer": {
+    "name": "Cozy Cloud",
+    "url": "https://cozy.io"
+  },
+  "langs": ["fr", "en"],
+  "locales": {
     "fr": {
       "short_description": "Récupère la liste de livres",
       "long_description": "Récupère la liste de livre sur le site exemple",
@@ -51,5 +81,7 @@
         }
       }
     }
-  }
+  },
+  "banksTransactionRegExp": "\\bbooks\\b",
+  "manifest_version": "2"
 }
