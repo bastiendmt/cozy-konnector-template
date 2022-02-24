@@ -1,7 +1,6 @@
 # Connector config
 .account
 .token.json
-konnector-dev-config.json*
 fixtures/*
 data/*
 
