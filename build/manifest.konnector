@@ -1,7 +1,7 @@
 {
-  "name": "konnector name",
+  "name": "Books konnector",
   "type": "node",
-  "slug": "konnectorslug",
+  "slug": "bookskonnector",
   "description": "description",
   "source": "git://https://github.com/bastiendmt/cozy-konnector-template",
   "permissions": {
