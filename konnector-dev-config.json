@@ -1,5 +1,5 @@
 {
-  "COZY_URL": "http://cozy.localhost:8080",
+  "COZY_URL": "http://cozy.127.0.0.1:8080",
   "fields": {
     "login": "zuck.m@rk.fb",
     "password": "123456"
